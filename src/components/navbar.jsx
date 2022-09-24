@@ -1,6 +1,13 @@
 /*  ./components/Navbar.jsx     */
 import Link from 'next/link';
 import { useState } from 'react';
+// Import the FontAwesomeIcon component
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// import the icons you need
+import {
+  faGem
+} from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -11,11 +18,14 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className='backdrop-blur-md bg-white/50 pt-6 pb-6'>
+      <nav className='backdrop-blur-md shadow-lg shadow-indigo-500/5 bg-white/30 pt-6 pb-6'>
         <div className='flex lg:justify-between container mx-auto'>
           <Link href='/'>
             <a>
-              <span className='text-xl text-black uppercase tracking-wide font-bold'>
+              <FontAwesomeIcon
+                icon={faGem}
+              />
+              <span className='ml-2 text-xl text-black uppercase tracking-wide font-bold'>
                 Ho'onalu
               </span>
             </a>
@@ -47,22 +57,22 @@ export const Navbar = () => {
           >
             <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
               <Link href='/'>
-                <a className='hover:cursor-pointer lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center hover:bg-slate-50'>
+                <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
                   Home
                 </a>
               </Link>
-              <Link href='/'>
-                <a className='hover:cursor-pointer lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center hover:bg-slate-50'>
+              <Link href='/services'>
+                <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
                   Services
                 </a>
               </Link>
-              <Link href='/'>
-                <a className='hover:cursor-pointer lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center hover:bg-slate-50'>
+              <Link href='/about'>
+                <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
                   About us
                 </a>
               </Link>
-              <Link href='/'>
-                <a className='hover:cursor-pointer lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center hover:bg-slate-50'>
+              <Link href='/contact'>
+                <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
                   Contact us
                 </a>
               </Link>
