@@ -2,10 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Navbar } from '../src/components/navbar'
-import { Hero } from '../src/components/hero'
 import { Footer } from '../src/components/footer'
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <div className='relative min-h-screen flex flex-col'>
       <Head>
@@ -18,15 +17,15 @@ const Home: NextPage = () => {
       </header>
 
       <main className="w-full">
-        <div className='fixed top-0 -z-10'>
-          <Image
-            src="/background.png"
-            alt="Picture of the author"
-            width={2296}
-            height={668}
-          />
+        <div className='container mx-auto text-center'>
+          <h1 className='flex justify-center font-bold text-7xl m-14'>お問い合わせ</h1>
+            お問い合わせ・ご予約・ご依頼は
+            下記連絡先または DM（Instagram / Facebook）にて
+            受け付けております。
+          
+            thehoonalu@gmail.com
+            09030778684
         </div>
-        <Hero/>
       </main>
 
       <footer className="block pt-20 pb-20 w-full mt-auto backdrop-blur-lg bg-white/30 z-10">
@@ -47,4 +46,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default About

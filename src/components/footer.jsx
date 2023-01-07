@@ -23,39 +23,23 @@ export const Footer = () => {
     <>
       <nav className=''>
         <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
-            <Link href='https://facebook.com'>
-            <a className='lg:inline-flex lg:w-auto w-full pr-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
+            <Link href='https://facebook.com/eva.kihira'>
+            <a target="_blank" rel="noopener noreferrer" className='lg:inline-flex lg:w-auto w-full pr-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
 							<FontAwesomeIcon
 								icon={faFacebook}
 								size="xl"
 							/>
             </a>
             </Link>
-            <Link href='https://instagram.com'>
-            <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
+            <Link href='https://instagram.com/hoonalu_soundbath'>
+            <a target="_blank" rel="noopener noreferrer" className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
 							<FontAwesomeIcon
 								icon={faInstagram}
 								size="xl"
 							/>
             </a>
             </Link>
-            <Link href='https://youtube.com'>
-            <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
-							<FontAwesomeIcon
-								icon={faYoutube}
-								size="lg"
-							/>
-            </a>
-            </Link>
-            <Link href='https://line.com'>
-            <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
-							<FontAwesomeIcon
-								icon={faLine}
-								size="xl"
-							/>
-            </a>
-            </Link>
-						<Link href='https://facebook.com'>
+						<Link href='mailto:kaimana.hiromi@gmail.com'>
             <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
 							<FontAwesomeIcon
 								icon={faPaperPlane}
@@ -63,7 +47,7 @@ export const Footer = () => {
 							/>
             </a>
             </Link>
-						<Link href='https://facebook.com'>
+						<Link href='tel:+81 09030778684'>
             <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
 							<FontAwesomeIcon
 								icon={faPhone}

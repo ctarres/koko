@@ -58,22 +58,22 @@ export const Navbar = () => {
             <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
               <Link href='/'>
                 <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
-                  Home
+                  ホームページ
                 </a>
               </Link>
               <Link href='/services'>
                 <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
-                  Services
+                  サービス
                 </a>
               </Link>
               <Link href='/about'>
                 <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
-                  About us
+                  会社概要
                 </a>
               </Link>
               <Link href='/contact'>
                 <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
-                  Contact us
+                  お問い合わせ
                 </a>
               </Link>
             </div>
