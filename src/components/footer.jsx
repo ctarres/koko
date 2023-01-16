@@ -22,9 +22,9 @@ export const Footer = () => {
   return (
     <>
       <nav className=''>
-        <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
+        <div className='flex flex-row ml-auto w-auto w-full items-center items-start'>
             <Link href='https://facebook.com/eva.kihira'>
-            <a target="_blank" rel="noopener noreferrer" className='lg:inline-flex lg:w-auto w-full pr-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
+            <a target="_blank" rel="noopener noreferrer" className='pr-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
 							<FontAwesomeIcon
 								icon={faFacebook}
 								size="xl"
@@ -32,7 +32,7 @@ export const Footer = () => {
             </a>
             </Link>
             <Link href='https://instagram.com/hoonalu_soundbath'>
-            <a target="_blank" rel="noopener noreferrer" className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
+            <a target="_blank" rel="noopener noreferrer" className='px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
 							<FontAwesomeIcon
 								icon={faInstagram}
 								size="xl"
@@ -40,7 +40,7 @@ export const Footer = () => {
             </a>
             </Link>
 						<Link href='mailto:kaimana.hiromi@gmail.com'>
-            <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
+            <a className='px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
 							<FontAwesomeIcon
 								icon={faPaperPlane}
 								size="xl"
@@ -48,7 +48,7 @@ export const Footer = () => {
             </a>
             </Link>
 						<Link href='tel:+81 09030778684'>
-            <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
+            <a className='px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
 							<FontAwesomeIcon
 								icon={faPhone}
 								size="xl"

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 // Import the FontAwesomeIcon component
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useRouter } from 'next/router';
 
 // import the icons you need
 import {
@@ -16,6 +17,8 @@ export const Navbar = () => {
     setActive(!active);
   };
 
+  const router = useRouter();
+
   return (
     <>
       <nav className='backdrop-blur-md shadow-lg shadow-indigo-500/5 bg-white/30 pt-6 pb-6'>
@@ -26,12 +29,12 @@ export const Navbar = () => {
                 icon={faGem}
               />
               <span className='ml-2 text-xl text-black uppercase tracking-wide font-bold'>
-                Ho'onalu
+                Leia Crystal
               </span>
             </a>
           </Link>
           <button
-            className=' inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+            className=' inline-flex p-3 rounded lg:hidden text-black ml-auto hover:text-black outline-none'
             onClick={handleClick}
           >
             <svg
@@ -56,23 +59,23 @@ export const Navbar = () => {
             }   w-full lg:inline-flex lg:w-auto`}
           >
             <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
-              <Link href='/'>
-                <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
+              <Link href='/' passHref>
+                <a className={router.pathname == "/" ? "bg-violet-200 px-4 py-1 rounded-full font-bold" : "lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer hover:font-bold"}>
                   ホームページ
                 </a>
               </Link>
-              <Link href='/services'>
-                <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
+              <Link href='/services' passHref>
+                <a className={router.pathname == "/services" ? "bg-violet-200 px-4 py-1 rounded-full font-bold" : "lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer hover:font-bold"}>
                   サービス
                 </a>
               </Link>
-              <Link href='/about'>
-                <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
+              <Link href='/about' passHref>
+                <a className={router.pathname == "/about" ? "bg-violet-200 px-4 py-1 rounded-full font-bold" : "lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer hover:font-bold"}>
                   会社概要
                 </a>
               </Link>
-              <Link href='/contact'>
-                <a className='lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer'>
+              <Link href='/contact' passHref>
+                <a className={router.pathname == "/contact" ? "bg-violet-200 px-4 py-1 rounded-full font-bold" : "lg:inline-flex lg:w-auto w-full px-4 py-1 rounded-md text-black items-center justify-center cursor-pointer hover:font-bold"}>
                   お問い合わせ
                 </a>
               </Link>

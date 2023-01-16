@@ -8,7 +8,7 @@ const About: NextPage = () => {
   return (
     <div className='relative min-h-screen flex flex-col'>
       <Head>
-        <title>クリスタルボウル Ho'onalu</title>
+        <title>Leia Crystal</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

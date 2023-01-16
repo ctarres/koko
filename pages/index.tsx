@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <div className='relative min-h-screen flex flex-col'>
       <Head>
-        <title>クリスタルボウル Ho'onalu</title>
+        <title>LeiaCrystal</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <Navbar/>
       </header>
 
-      <main className="w-full">
+      <main className="w-full container">
         <div className='fixed top-0 -z-10'>
           <Image
             src="/background.png"

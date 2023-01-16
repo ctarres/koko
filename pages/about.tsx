@@ -9,7 +9,7 @@ const About: NextPage = () => {
   return (
     <div className='relative min-h-screen flex flex-col'>
       <Head>
-        <title>クリスタルボウル Ho'onalu</title>
+        <title>Leia Crystal</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -19,10 +19,27 @@ const About: NextPage = () => {
 
       <main className="w-full">
         <div className='container mx-auto text-center'>
-            <h1 className='flex justify-center font-bold text-7xl m-14'>会社概要</h1>
-            <h2 className='flex justify-center font-bold text-4xl mt-10'>HO'ONALUではアルケミー・クリスタルボウル演奏会、サウンドヒーリングを行なっています。</h2>
+            <h1 className='flex justify-center font-bold text-2xl md:text-4xl lg:text-7xl m-14'>会社概要</h1>
+            <div className='inline-flex flex-col lg:flex-row items-center bg-slate-100 px-6 py-4 rounded-lg'>
+              <div className='relative h-[8rem] w-[8rem]'>
+                <Image
+                  className='rounded-full'
+                  src="/hiromi_profile.jpg"
+                  alt="Picture of the author"
+                  layout="fill"
+                  objectFit="cover"
+                  quality={100}
+                />
+              </div>
+              <p className='flex-1 mt-6 lg:mt-0 lg:text-left lg:ml-12'>
+              【♥︎サウンドスピリットクリスタルボウルヒーリング】【❤️アルクトゥールス遠隔ヒーリングアニマルメッセージ】
+                クリスタルボウル、ヒーリングウェーブで、周波数❤︎音響セラピスト♣︎遠隔ヒーリング承ります。
+              </p>
+            </div>
+
+            <h2 className='flex justify-center font-bold text-4xl mt-10'>Leia Crystalではアルケミー・クリスタルボウル演奏会、サウンドヒーリングを行なっています。</h2>
             
-            <p className='my-4 text-zinc-700'>HO'ONALU (ホオナル) とはハワイ語で静かな水のようになり流れのままにという意味で瞑想に使われる言葉です。
+            <p className='my-4 text-zinc-700'>Leia Crystalとはハワイ語で静かな水のようになり流れのままにという意味で瞑想に使われる言葉です。
             自分自身が波になり流れのままにクリスタルボウルの音色に委ね本来の自分を取り戻しましょう。
             <i>Be like the water. Go with the flow.</i></p>
               
